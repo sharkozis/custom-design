@@ -1,0 +1,58 @@
+//======problem-1==========
+// const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+// let sum =0
+// for(let i = 0;i<arr.length;i++){
+//     if(arr[i] % 4 ==0){
+//         const element = arr[i]
+//         sum = sum + element
+//     }
+// }
+// console.log(sum)
+
+
+//=========problem-2=============
+// let maxNumber = arr[0]
+// for(let i =0;i<arr.length;i++){
+    //     if(arr[i] % 4 == 0){
+        //        const myArray = arr[i]
+        //        if(myArray > maxNumber){
+            //         maxNumber = myArray
+            //        }
+            
+            //     }
+            // }
+            // console.log(maxNumber)
+
+
+
+
+
+// ==============problem-3==============
+function largestNumber(arrayList){
+    let maxNumber = arrayList[0]
+    for(let i =0;i<arrayList.length;i++){
+        if(arrayList[i] % 4 == 0){
+            const myArray = arrayList[i]
+            if(myArray > maxNumber){
+                maxNumber = myArray
+            }
+        }
+    }
+    return maxNumber
+}
+const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+console.log(largestNumber(arr))
+
+
+
+
+//================problem-4=================
+let maxN = 0
+for(let i = 1;i<=20;i++){
+    if(i % 4 == 0){
+        if(i > maxN){
+            maxN = i
+        }
+    }
+}
+console.log(maxN)
